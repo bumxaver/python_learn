@@ -1,0 +1,22 @@
+# Дан произвольный текст. Напечатайте все имеющиеся в нем цифры, определите их
+#количество, сумму и найти максимальное.
+
+s='test test2 test34 tetet tetqte test1'
+sum=0
+count=0
+max=0
+print(s)
+n=s.split()
+print(n)
+m=list()
+for i in range(len(n)):
+	for k in n[i]:
+		print(k)
+		if k.isdigit():
+			sum+=int(k)
+			count+=1
+			if max<int(k):
+				max=int(k)
+print("сумма всех чисел="+str(sum))
+print("количество чисел="+str(count))
+print("максимальное число="+str(max))

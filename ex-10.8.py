@@ -1,0 +1,11 @@
+#Дан произвольный текст. Найдите номер первого самого длинного слова в нем.
+
+s='test 2test 33test 4444test'
+n=s.split()
+print(n) 
+longword=0
+for i in range(0, len(n)):
+	if len(n[longword]) < len(n[i]):
+		longword = i
+print(n[longword])
+	
